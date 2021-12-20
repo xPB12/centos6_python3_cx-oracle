@@ -8,6 +8,7 @@ COPY instantclient/* /tmp/
 RUN \
   yum -y update && \
   yum -y install libaio gcc && \
+  yum -y install git && \
   yum -y install epel-release && \
   yum -y install python34 python34-devel python34-setuptools && \
   easy_install-3.4 pip && \
